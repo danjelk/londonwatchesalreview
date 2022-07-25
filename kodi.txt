@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<center>
+
+<style>
+
+
+<center>
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: center;
+    height:46px;
+    padding: 0 20px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:justify;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:100px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+</style>
+
+
+
+
+<script>
+function myfunction() {
+window.open("https://www.instagram.com/london_watches.al/");
+}
+ </script>
+
+
+
+
+</head>
+
+
+
+
+<body style="background-color:#858585;">
+<table style="width:90%">
+<tr style="background-color:#4F4B4A">
+<th style="color:white"> 
+<h4>Help us. Help others. You’re invited to review</h4>
+<h1>London Watches Albania</h1>
+</th>
+</tr>
+
+
+
+<tr style="background-color:white">
+<th style="color:grey">
+<br>
+<img src="LOGO.png">
+<br>
+<br>
+<br>
+<p>Please take a moment to review your experience with us. Your feedback not only helps us, it helps other potential customers.</p>
+<br>
+<br>
+
+<div class="rate">
+    <input type="radio" id="star5" onclick="myfunction()" name="rate" value="5"/>
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" onclick="myfunction()" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" onclick="myfunction()" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" onclick="myfunction()" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" onclick="myfunction()" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+</tr>
+
+
+
+<tr style="background-color:#D3D3D3">
+<th style="color:grey"><p>Powered by Danjel Kalari</p></th>
+</tr>
+
+
+
+
+
+
+</body>
+</html>
